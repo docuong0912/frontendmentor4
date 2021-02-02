@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.scss"
+	],
+	"sourcesContent": [
+		"$softRed: hsl(0, 93%, 68%);\r\n$desRed: hsl(0, 36%, 70%);\r\n$darkRed: hsl(0, 6%, 24%);\r\nmain{\r\n\tbackground-color:$softRed;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAGA,AAAA,IAAI,CAAA;EACH,gBAAgB,EAJP,OAAgB;CAKzB"
+}

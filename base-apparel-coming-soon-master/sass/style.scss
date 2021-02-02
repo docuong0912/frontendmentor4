@@ -1,0 +1,110 @@
+$softRed: hsl(0, 93%, 68%);
+$desRed: hsl(0, 36%, 70%);
+$darkRed: hsl(0, 6%, 24%);
+body{
+	height:700px;
+}
+@mixin error{
+	display:none;
+}
+main{
+	color:$desRed;
+	font-family:"Josefin Sans";
+	width:95%;
+	text-align:center;
+	margin:auto;
+	h1{
+		font-size:35px;
+		letter-spacing:8px;
+		text-transform:uppercase;
+	}
+	strong{
+		line-height: 1.5;
+	}
+}
+header{
+	img{
+		margin:10px 0;
+	}
+} 
+#logo{
+	width:100px;
+	height:20px;
+	margin-left:40px;
+}
+footer{
+	position:relative;
+	margin-top:20px;
+}
+button{
+	position:absolute;
+	right:10px;
+	background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+	width:70px;
+	height:50px;
+	border-radius:30px;
+	outline:none;
+	border:none;
+}
+#error-mess{
+	@include error;
+	position:absolute;
+	right:100px;
+	width:30px;
+	height:30px;
+	top:10px;
+}
+#error-noti{
+	@include error;
+	color:red;
+	margin:0 10px;
+}
+input{
+	height:45px;
+	border-radius:20px;
+	width:90%;
+	border:1px solid $darkRed;
+	opacity:0.5;
+	padding:0 10px;
+	outline:none;
+	color:$desRed;
+}
+@media screen and (
+min-width:760px){
+	header{
+		width:100%;
+		height:100%;
+		img{
+			display:inline-block;
+		}
+		#image-right{
+			float:right;
+			width:50%;
+			height:100%;
+		}
+		#logo{
+			width:200px;
+			height:50px;
+			margin:50px 100px;
+		}
+	}
+	main{
+		position:absolute;
+		top:200px;
+		left:0;
+		width:30%;
+		left:100px;
+		text-align:left;
+		h1{
+			font-size:50px;
+		}
+
+	}
+	footer{
+		postion:absolute;
+		bottom:120px;
+		left:100px;
+		width:30%;
+
+	}
+}
